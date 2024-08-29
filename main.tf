@@ -1,5 +1,17 @@
 # main.tf
 
+# main.tf
+
+terraform {
+  backend "s3" {
+    bucket         = "shridhar131296"
+    key            = "terraform/state.tfstate"
+    region         = "us-east-1"
+    dynamodb_table = "shridhar131296"
+    encrypt        = true
+  }
+}
+
 provider "aws" {
   region = "us-east-1"
 }
