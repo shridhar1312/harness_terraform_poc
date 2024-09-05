@@ -1,3 +1,8 @@
+# Provider block for AWS
+provider "aws" {
+  region = "us-east-1"  # Define your AWS region
+}
+
 terraform {
   backend "s3" {
     bucket         = "shridhar131"          # Replace with your S3 bucket name
