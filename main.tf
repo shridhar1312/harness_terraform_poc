@@ -58,8 +58,8 @@ resource "aws_security_group" "allow_http" {
 }
 
 resource "aws_security_group" "allow_https" {
-  name        = "allow_http"
-  description = "Allow HTTP inbound traffic"
+  name        = "allow_https"
+  description = "Allow HTTPs inbound traffic"
 
   ingress {
     from_port   = 443
